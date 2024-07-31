@@ -21,10 +21,10 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     <html lang="en">
       {/* <body className={inter.className}>{children}</body> */}
       <body
-        className={cn(
-          "min-h-screen bg-background font-sans antialiased",
-          fontSans.variable
-        )}
+        // className={cn(
+        //   "min-h-screen bg-background font-sans antialiased",
+        //   fontSans.variable
+        // )}
       >
         {/* <Navbar /> */}
         <main>
