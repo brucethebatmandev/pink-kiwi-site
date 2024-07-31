@@ -36,7 +36,7 @@ export const CarouselDemo = () => {
               <img
                 src={url}
                 alt={`Image ${index + 1}`}
-                className="w-full min-h-[20rem] object-cover sm:h-auto sm:w-auto _object-center object-right"
+                className="w-full min-h-[25rem] object-cover sm:h-auto sm:w-auto _object-center object-right"
               />
             </CardContent>
           </Card>

@@ -1,4 +1,4 @@
-import { Cake, CakeSlice, Dessert, Smile } from 'lucide-react'
+import { Cake, CakeSlice, Dessert } from 'lucide-react'
 import React from 'react'
 
 const About = () => {
@@ -18,7 +18,7 @@ const About = () => {
           {/* Section 1 - Icon, Header, Text*/}
           <div className='flex gap-4'>
             <div className='flex justify-center items-center'>
-              <div className='p-5 bg-pink-400/50 rounded-full'>
+              <div className='p-5 bg-pink-400/50 rounded-full shadow-md'>
                 <Cake className='w-12 h-12' />
               </div>
             </div>
@@ -31,7 +31,7 @@ const About = () => {
           {/* Section 2 - Icon, Header, Text */}
           <div className='flex gap-4'>
             <div className='flex justify-center items-center'>
-              <div className='p-5 bg-pink-400/50 rounded-full'>
+              <div className='p-5 bg-pink-400/50 rounded-full shadow-md'>
                 <CakeSlice className='w-12 h-12' />
               </div>
             </div>
@@ -44,7 +44,7 @@ const About = () => {
           {/* Section 3 - Icon, Header, Text */}
           <div className='flex gap-4'>
             <div className='flex justify-center items-center'>
-              <div className='p-5 bg-pink-400/50 rounded-full'>
+              <div className='p-5 bg-pink-400/50 rounded-full shadow-md'>
                 <Dessert className='w-12 h-12' />
               </div>
             </div>
@@ -57,7 +57,7 @@ const About = () => {
         </div>
 
         {/* Ice cream Image */}
-        <div className='max-w-[40rem]'>
+        <div className='max-w-[33rem]'>
           <img src="https://thedesserts.co.uk/images/about.png" alt="" />
         </div>
 
