@@ -4,7 +4,7 @@ import IconWithTextBlock from './IconWithTextBlock'
 
 const About = () => {
   return (
-    <div className='grid gap-8 justify-center mx-5 my-24'>
+    <div className='grid gap-8 justify-items-center mx-5 my-24'>
 
       <div className='grid gap-4'>
         <h1 className='text-3xl'>Pink Kiwi Cafe</h1>
@@ -12,7 +12,7 @@ const About = () => {
       </div>
 
       {/* Container for 3-sections and Ice Cream Image */}
-      <div className='grid gap-16 lg:grid-cols-2 justify-center items-center lg:p-10'>
+      <div className='grid gap-16 lg:grid-cols-2 justify-items-center items-center lg:p-10'>
 
         {/* Section Container - Icon, Header, Text */}
         <div className='grid gap-8 md:gap-14 max-h-[25rem] max-w-xl'>
@@ -37,7 +37,7 @@ const About = () => {
 
         {/* Ice cream Image */}
         <div className='max-w-[30rem]'>
-          <img src="https://thedesserts.co.uk/images/about.png" alt="" />
+          <img src="https://img.taste.com.au/swuErs2G/taste/2021/02/lemon-dream-dessert-169681-2.jpg" alt="" className='rounded-xl shadow-md' />
         </div>
 
       </div>
