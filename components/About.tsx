@@ -4,7 +4,7 @@ import IconWithTextBlock from './IconWithTextBlock'
 
 const About = () => {
   return (
-    <div className='grid gap-8 justify-center m-5'>
+    <div className='grid gap-8 justify-center mx-5 my-24'>
 
       <div className='grid gap-4'>
         <h1 className='text-3xl'>Pink Kiwi Cafe</h1>
@@ -36,13 +36,11 @@ const About = () => {
         </div>
 
         {/* Ice cream Image */}
-        <div className='max-w-[33rem]'>
+        <div className='max-w-[30rem]'>
           <img src="https://thedesserts.co.uk/images/about.png" alt="" />
         </div>
 
       </div>
-
-
 
     </div>
   )
