@@ -14,10 +14,13 @@ import Fade from 'embla-carousel-fade'
 
 export const HeroCarousel = () => {
     const imageUrls = [
-        'https://thedesserts.co.uk/images/33.jpg',
-        'https://thedesserts.co.uk/images/31.jpg',
-        'https://thedesserts.co.uk/images/32.jpg',
-        'https://thedesserts.co.uk/images/693.jpg',
+        '/img/storefront.jpg',
+        '/img/storefront.jpg',
+        '/img/storefront.jpg',
+        // 'https://thedesserts.co.uk/images/33.jpg',
+        // 'https://thedesserts.co.uk/images/31.jpg',
+        // 'https://thedesserts.co.uk/images/32.jpg',
+        // 'https://thedesserts.co.uk/images/693.jpg',
     ];
     return (
                 
