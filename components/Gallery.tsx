@@ -23,7 +23,7 @@ const Gallery = () => {
       <h1 className='text-3xl'>Explore Our Gallery</h1>
 
       {/* image card grid */}
-      <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 justify-items-center'>
+      <div className='grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-5 justify-items-center'>
 
         {/* <Img
           url="https://plus.unsplash.com/premium_photo-1676299910876-747eeb0c11dc?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8c3F1YXJlfGVufDB8fDB8fHww"
