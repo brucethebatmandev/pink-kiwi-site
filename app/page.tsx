@@ -10,10 +10,8 @@ export default function Home() {
       <HeroCarousel/>
       <About/>
       <Menu/>
-      <div className="m-5 outline outline-2 outline-red-300">
       <Gallery/>
       <Reviews/>
-      </div>
 
     </>
   );

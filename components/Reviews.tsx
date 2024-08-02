@@ -31,13 +31,13 @@ const Reviews = () => {
             <CarouselItem key={index} className="sm:basis-1/2 lg:basis-1/3 min-w-80">
               <div className="p-1">
                 <Card>
-                  <CardContent className="flex flex-col gap-3 aspect-square items-center justify-items-center justify-center p-6">
+                  <CardContent className="flex flex-col gap-3 aspect-square items-center justify-items-center justify-center p-6 hover:bg-slate-100/60 transition duration-300">
 
                     <div className="flex items-center gap-2">
                       {/* <CircleUserRound className="h-12 w-12 text-slate-600" /> */}
                       <img
                         src="https://t3.ftcdn.net/jpg/03/46/83/96/360_F_346839683_6nAPzbhpSkIpb8pmAwufkC7c5eD7wYws.jpg"
-                        className="max-w-[5rem]"
+                        className="max-w-[5rem] rounded-full"
                       />
 
                       <div className="grid gap-2 items-center justify-items-center">
