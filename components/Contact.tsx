@@ -115,7 +115,7 @@ const Contact = async () => {
   ]
 
   return (
-    <div id="contact" className="grid lg:grid-cols-2 gap-10 lg:gap-0 lg:mb-20">
+    <div id="contact" className="grid lg:grid-cols-2 gap-20  lg:gap-0 lg:mb-20">
 
       {/* Phone, Email, Address & Opening Hours*/}
       <div className="grid gap-4 justify-center items-center h-full rounded-md tracking-wide">
@@ -189,10 +189,10 @@ const Contact = async () => {
       {/* <!-- Contact Form --> */}
       <div className="mb-20 lg:mb-0">
 
-        <div className="mt-3 sm:mt-20 lg:mt-0 xl:mt-0 px-10 md:px-0 mx-auto w-full max-w-lg lg:px-8">
+        <div className="grid gap-4 w-full max-w-lg px-10 md:px-0 lg:px-8 mx-auto  ">
 
 
-          <h2 className="text-3xl mb-10">Send us a Message</h2>
+          <h2 className="text-3xl">Send us a Message</h2>
           <form
             action="#"
             method="POST"
