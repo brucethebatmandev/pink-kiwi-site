@@ -1,22 +1,22 @@
 import React from 'react'
-import { CarouselSize } from './Carousel'
+
+interface ImgProps {
+  url: string;
+}
+const Img: React.FC<ImgProps> = ({ url }) => {
+  return (
+    <div className=''>
+      <img
+        src={url}
+        alt=""
+        className='max-w-[15rem] aspect-square rounded-xl shadow-md transform hover:scale-105 duration-300'
+      />
+    </div>
+  );
+}
+
 
 const Gallery = () => {
-
-  interface ImgProps {
-    url: string;
-  }
-  const Img: React.FC<ImgProps> = ({ url }) => {
-    return (
-      <div className=''>
-        <img
-          src={url}
-          alt=""
-          className='max-w-[15rem] aspect-square rounded-xl shadow-md transform hover:scale-105 duration-300'
-        />
-      </div>
-    );
-  }
   return (
     <div className='grid gap-6 justify-center m-5 my-24'>
 
