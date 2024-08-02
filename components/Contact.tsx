@@ -255,7 +255,7 @@ const Contact = async () => {
             <div className="mt-10">
               <button 
                 type="submit"
-                className="block w-full px-3.5 py-2.5 text-center text-sm font-semibold shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 rounded-md border bg-black text-white"
+                className="block w-full px-3.5 py-2.5 text-center text-md font-semibold shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 rounded-md border bg-black text-white tracking-wide"
               >
                 Send Message
               </button>
