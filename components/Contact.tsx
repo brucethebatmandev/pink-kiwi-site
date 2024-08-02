@@ -118,7 +118,7 @@ const Contact = async () => {
     <div id="contact" className="grid lg:grid-cols-2 lg:mb-20">
 
       {/* Phone, Email, Address & Opening Hours*/}
-      <div className="grid gap-4 justify-center items-center bg-[#fafaed] h-full rounded-md tracking-wide">
+      <div className="grid gap-4 justify-center items-center h-full rounded-md tracking-wide">
 
         <h2 className="text-3xl">How to reach out</h2>
 
@@ -167,16 +167,16 @@ const Contact = async () => {
 
 
         {/* <!-- Opening Hours --> */}
-        <div className="_mx-auto w-56">
+        <div className="w-56">
           <h2 className="mt-8 mb-2 text-lg">Opening Hours</h2>
 
           <div>
             {
-              openingHours.map((doc: OpeningHours) => {
+              openingHours.map((doc: OpeningHours, index: number) => {
                 return (
-                  <p className="flex justify-between gap-3">
+                  <p key={index} className="flex justify-between gap-3">
                     <span>{doc.day}:</span>
-                    <span>{doc.openingTime} - {doc.closingTime}</span>
+                    <span>{doc.openingTime.toLowerCase()} - {doc.closingTime.toLowerCase()}</span>
                   </p>
                 )
               })
@@ -203,41 +203,59 @@ const Contact = async () => {
               <div>
                 <label className="block text-sm leading-6">First name</label>
                 <div className="mt-2.5">
-                  <input type="text" name="first-name" id="first-name" autoComplete="given-name"
-                    className="block w-full border-1 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6" />
+                  <input 
+                    type="text" 
+                    name="first-name" 
+                    id="first-name" 
+                    autoComplete="given-name"
+                    className="block w-full border-1 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6 rounded-md" 
+                  />
                 </div>
               </div>
 
               <div>
                 <label className="block text-sm leading-6">Last name</label>
                 <div className="mt-2.5">
-                  <input type="text" name="last-name" id="last-name" autoComplete="family-name"
-                    className="block w-full border-1 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6" />
+                  <input 
+                    type="text" 
+                    name="last-name" 
+                    id="last-name" 
+                    autoComplete="family-name"
+                    className="block w-full border-1 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6 rounded-md" 
+                  />
                 </div>
               </div>
 
               <div className="sm:col-span-2">
                 <label className="block text-sm leading-6">Email</label>
                 <div className="mt-2.5">
-                  <input type="email" name="email" id="email" autoComplete="email"
-                    className="block w-full border-1 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6" />
+                  <input 
+                    type="email" 
+                    name="email" 
+                    id="email" 
+                    autoComplete="email"
+                    className="block w-full border-1 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6 rounded-md" 
+                  />
                 </div>
               </div>
 
               <div className="sm:col-span-2">
                 <label className="block text-sm leading-6">Message</label>
                 <div className="mt-2.5">
-                  <textarea name="message" id="message"
+                  <textarea 
+                    name="message" 
+                    id="message"
                     rows={3}
-                    className="block w-full border-1 px-3.5 py-2 text-gray-400 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6"></textarea>
+                    className="block w-full border-1 px-3.5 py-2 text-gray-400 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6 rounded-md"></textarea>
                 </div>
               </div>
 
             </div>
 
             <div className="mt-10">
-              <button type="submit"
-                className="block w-full px-3.5 py-2.5 text-center text-sm font-semibold shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 border-double border-4 border-slate-700 hover:border-slate-600"
+              <button 
+                type="submit"
+                className="block w-full px-3.5 py-2.5 text-center text-sm font-semibold shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 rounded-md border bg-black text-white"
               >
                 Send Message
               </button>
