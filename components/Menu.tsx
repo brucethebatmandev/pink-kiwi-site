@@ -35,8 +35,12 @@ const Menu = () => {
         </div>
 
         {/* Ice cream Image */}
-        <div className='max-w-[30rem] lg:order-1'>
-          <img src="https://cdn.loveandlemons.com/wp-content/uploads/2021/06/summer-desserts.jpg" alt="" className='rounded-xl shadow-md' />
+        <div className='max-w-[25rem] lg:order-1'>
+          <img 
+            src="https://cdn.loveandlemons.com/wp-content/uploads/2021/06/summer-desserts.jpg" 
+            alt="" 
+            className='rounded-xl shadow-md aspect-square' 
+          />
         </div>
 
       </div>

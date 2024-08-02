@@ -1,14 +1,15 @@
 import About from "@/components/About";
-import { CarouselDemo } from "@/components/Carousel";
+import { HeroCarousel } from "@/components/HeroCarousel";
+import Gallery from "@/components/Gallery";
 import Menu from "@/components/Menu";
 
 export default function Home() {
   return (
     <>
-      <CarouselDemo/>
+      <HeroCarousel/>
       <About/>
       <Menu/>
-
+      <Gallery/>
     </>
   );
 }

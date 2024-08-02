@@ -36,8 +36,11 @@ const About = () => {
         </div>
 
         {/* Ice cream Image */}
-        <div className='max-w-[30rem]'>
-          <img src="https://img.taste.com.au/swuErs2G/taste/2021/02/lemon-dream-dessert-169681-2.jpg" alt="" className='rounded-xl shadow-md' />
+        <div className='max-w-[25rem]'>
+          <img 
+            src="https://img.taste.com.au/swuErs2G/taste/2021/02/lemon-dream-dessert-169681-2.jpg" 
+            alt="" 
+            className='rounded-xl shadow-md aspect-square' />
         </div>
 
       </div>
