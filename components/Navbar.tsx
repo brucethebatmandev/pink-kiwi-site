@@ -21,7 +21,7 @@ export const Navbar = () => {
 
     return (
         <div className="absolute z-10 w-full">
-            <div className=" flex justify-between px-5 py-5 text-lg font-semibold bg-transparent __bg-pink-500/65 text-white">
+            <div className=" flex justify-between px-5 py-5 text-lg font-semibold __bg-transparent bg-pink-500/65 text-white">
                 <Link href="/">
                     <img
                         className="rounded-full max-w-16"
