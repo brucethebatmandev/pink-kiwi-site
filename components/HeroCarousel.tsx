@@ -11,7 +11,7 @@ import {
 } from "@/components/ui/carousel"
 // import { Navbar } from "./Navbar"
 import Fade from 'embla-carousel-fade'
-import Navbar from "./NavbarNew"
+import Navbar from "./Navbar"
 
 
 export const HeroCarousel = () => {

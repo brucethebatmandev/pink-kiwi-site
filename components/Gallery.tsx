@@ -29,10 +29,10 @@ const Gallery = () => {
           url="https://plus.unsplash.com/premium_photo-1676299910876-747eeb0c11dc?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8c3F1YXJlfGVufDB8fDB8fHww"
         /> */}
 
-        {Array.from({ length: 20 }).map((_, index) => (
+        {Array.from({ length: 12 }).map((_, index) => (
           <Img
             key={index}
-            url="https://plus.unsplash.com/premium_photo-1676299910876-747eeb0c11dc?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8c3F1YXJlfGVufDB8fDB8fHww"
+            url="https://cdn.loveandlemons.com/wp-content/uploads/2021/06/summer-desserts.jpg"
           />
         ))}
 
