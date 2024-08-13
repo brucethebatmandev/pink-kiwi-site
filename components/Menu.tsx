@@ -4,7 +4,7 @@ import { CakeSlice, IceCreamBowl, IceCreamCone } from 'lucide-react'
 
 const Menu = () => {
   return (
-    <div className='grid gap-8 justify-items-center mx-5 my-24'>
+    <div id='menu' className='grid gap-8 justify-items-center mx-5 my-24'>
 
       {/* Menu Section */}
       <div className='grid gap-4'>

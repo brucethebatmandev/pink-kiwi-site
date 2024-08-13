@@ -4,7 +4,7 @@ import IconWithTextBlock from './IconWithTextBlock'
 
 const About = () => {
   return (
-    <div className='grid gap-8 justify-items-center mx-5 my-24'>
+    <div id='about' className='grid gap-8 justify-items-center mx-5 my-24'>
 
       <div className='grid gap-4'>
         <h1 className='text-3xl'>Pink Kiwi Cafe</h1>

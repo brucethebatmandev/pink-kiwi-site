@@ -18,7 +18,7 @@ const Img: React.FC<ImgProps> = ({ url }) => {
 
 const Gallery = () => {
   return (
-    <div className='grid gap-6 justify-center m-5 my-24'>
+    <div id='gallery' className='grid gap-6 justify-center m-5 my-24'>
 
       <h1 className='text-3xl'>Explore Our Gallery</h1>
 
