@@ -8,11 +8,11 @@ const Hero = () => {
 
                     {/* Navbar - 20% of the column */}
                     <ul className="flex gap-6 text-md max-w-md w-full flex-[0_0_5%] _bg-yellow-500 justify-center lg:justify-start _justify-start ">
-                        <li>Menu</li>
-                        <li>About</li>
-                        <li>Gallery</li>
-                        <li>Contact</li>
-                        <li>Order</li>
+                        <li className="hover:cursor-pointer">Menu</li>
+                        <li className="hover:cursor-pointer">About</li>
+                        <li className="hover:cursor-pointer">Gallery</li>
+                        <li className="hover:cursor-pointer">Contact</li>
+                        <li className="hover:cursor-pointer">Order</li>
                     </ul>
 
                     {/* Content - 80% of the column */}
@@ -26,7 +26,7 @@ const Hero = () => {
                             We offer fresh food and dessert based on high quality ingredients with a perfect place.
                         </p>
 
-                        <button className="bg-stone-300 text-gray-800 shadow-lg font-semibold px-5 py-3 rounded-xl w-32">
+                        <button className="bg-pink-400/90 text-white shadow-lg font-bold px-5 py-3 rounded-xl w-32">
                             View Menu
                         </button>
                     </div>
@@ -39,7 +39,7 @@ const Hero = () => {
             <div className="col-span-1 _max-w-screen-lg h-full bg-yellow-100">
 
                 {/* Hero Image */}
-                <img src="https://www.riseandgrind.co/wordpress/wp-content/uploads/2021/03/disposable-cup-rise-and-grind-4.jpg"  className="h-full"/>
+                <img src="https://www.riseandgrind.co/wordpress/wp-content/uploads/2021/03/disposable-cup-rise-and-grind-4.jpg"  className="h-full min-h-[25rem] object-cover"/>
             </div>
 
         </div>
