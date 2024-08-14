@@ -4,19 +4,17 @@ import { CakeSlice, IceCreamBowl, IceCreamCone } from 'lucide-react'
 
 const Menu = () => {
   return (
-    <div id='menu' className='grid gap-8 justify-items-center mx-5 my-24'>
+    <div id='menu' className='my-24 grid lg:grid-cols-2 gap-24 lg:gap-0'>
 
-      {/* Menu Section */}
-      <div className='grid gap-4'>
-        <h1 className='text-3xl'>Our Delicious Menu</h1>
-        <p>Experience the exquisite flavors and exceptional quality of our diverse dessert menu</p>
-      </div>
+      <div className='col-span-1 m-auto lg:order-last'>
 
-      {/* Container for 3-sections and Ice Cream Image */}
-      <div className='grid gap-16 lg:grid-cols-2 justify-items-center items-center lg:p-10'>
+        <div className='grid gap-10 max-w-md'>
 
-        {/* 3 Sections - IconTextBlocks */}
-        <div className='grid gap-8 md:gap-14 max-h-[25rem] max-w-xl lg:order-2'>
+          <div className='grid gap-4'>
+            <h1 className='text-3xl'>Our Delicious Menu</h1>
+            <p>Experience the exquisite flavors and exceptional quality of our diverse dessert menu</p>
+          </div>
+
           <IconWithTextBlock
             icon={CakeSlice}
             heading='Fresh Cakes'
@@ -34,15 +32,15 @@ const Menu = () => {
           />
         </div>
 
-        {/* Ice cream Image */}
-        <div className='max-w-[25rem] lg:order-1'>
-          <img 
-            src="https://cdn.loveandlemons.com/wp-content/uploads/2021/06/summer-desserts.jpg" 
-            alt="" 
-            className='rounded-xl shadow-md aspect-square' 
-          />
-        </div>
+      </div>
 
+      <div className='col-span-1 m-auto lg:order-first'>
+        <img
+          // src="https://cdn.loveandlemons.com/wp-content/uploads/2021/06/summer-desserts.jpg"
+          src='/img/breakfast-spread-1.jpg'
+          alt=""
+          className='rounded-xl shadow-md aspect-square max-w-[25rem] max-h-[25rem] object-cover'
+        />
       </div>
 
     </div>
