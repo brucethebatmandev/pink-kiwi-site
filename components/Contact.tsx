@@ -1,3 +1,7 @@
+import EmailIcon from "./icons/EmailIcon";
+import LocationIcon from "./icons/LocationIcon";
+import PhoneIcon from "./icons/PhoneIcon";
+
 type Contact = {
   id: number;
   type: string;
@@ -115,10 +119,10 @@ const Contact = async () => {
   ]
 
   return (
-    <div id="contact" className="grid lg:grid-cols-2 gap-20 lg:gap-0 lg:mb-20">
+    <div id="contact" className="grid lg:grid-cols-2 gap-20 lg:gap-0 lg:mb-20 py-10">
 
-      {/* Phone, Email, Address & Opening Hours*/}
-      <div className="grid gap-10 lg:gap-6 justify-center items-center h-full rounded-md tracking-wide">
+      {/*( Phone, Email, Address) & Opening Hours */}
+      <div className="grid gap-10 lg:gap-6 justify-center h-full rounded-md tracking-wide">
 
         <h2 className="text-3xl">How to reach out</h2>
 
@@ -126,11 +130,7 @@ const Contact = async () => {
 
           {/* Phone */}
           <div className="flex gap-4">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5"
-              stroke="currentColor" className="w-6 h-6">
-              <path strokeLinecap="round" strokeLinejoin="round"
-                d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
-            </svg>
+            <PhoneIcon />
             <a href="" className="hover:cursor-pointer">
               <p>{phone}</p>
             </a>
@@ -138,11 +138,7 @@ const Contact = async () => {
 
           {/* Email */}
           <div className="flex gap-4">
-            <svg className="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5"
-              stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round"
-                d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
-            </svg>
+            <EmailIcon />
             <div className="grid items-center justify-center">
               <a href="" className="hover:cursor-pointer">
                 <p>{email}</p>
@@ -152,12 +148,7 @@ const Contact = async () => {
 
           {/* Address */}
           <div className="flex gap-4">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5"
-              stroke="currentColor" className="w-6 h-6">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
-              <path strokeLinecap="round" strokeLinejoin="round"
-                d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
-            </svg>
+            <LocationIcon />
             <a href="" className="hover:cursor-pointer">
               <p>{address}</p>
             </a>
@@ -167,21 +158,24 @@ const Contact = async () => {
 
 
         {/* <!-- Opening Hours --> */}
-        <div className="w-56">
-          <h2 className="_mt-8 mb-2 text-lg">Opening Hours</h2>
-
+        <div className="w-56 flex flex-col justify-end">
           <div>
-            {
-              openingHours.map((doc: OpeningHours, index: number) => {
-                return (
-                  <p key={index} className="flex justify-between gap-3">
-                    <span>{doc.day}:</span>
-                    <span>{doc.openingTime.toLowerCase()} - {doc.closingTime.toLowerCase()}</span>
-                  </p>
-                )
-              })
-            }
+            <h2 className="mb-2 text-lg">Opening Hours</h2>
+
+            <div>
+              {
+                openingHours.map((doc: OpeningHours, index: number) => {
+                  return (
+                    <p key={index} className="flex justify-between gap-3">
+                      <span>{doc.day}:</span>
+                      <span>{doc.openingTime.toLowerCase()} - {doc.closingTime.toLowerCase()}</span>
+                    </p>
+                  )
+                })
+              }
+            </div>
           </div>
+
         </div>
 
       </div>
@@ -189,26 +183,22 @@ const Contact = async () => {
       {/* <!-- Contact Form --> */}
       <div className="mb-20 lg:mb-0">
 
-        <div className="grid gap-4 w-full max-w-lg px-10 md:px-0 lg:px-8 mx-auto  ">
-
+        <div className="grid gap-8 lg:gap-12 w-full max-w-lg px-10 md:px-0 lg:px-8 mx-auto">
 
           <h2 className="text-3xl">Send us a Message</h2>
-          <form
-            action="#"
-            method="POST"
 
-          >
+          <form action="#" method="POST">
             <div className="grid gap-x-8 gap-y-6 sm:grid-cols-2 text-gray-900">
 
               <div>
                 <label className="block text-sm leading-6">First name</label>
                 <div className="mt-2.5">
-                  <input 
-                    type="text" 
-                    name="first-name" 
-                    id="first-name" 
+                  <input
+                    type="text"
+                    name="first-name"
+                    id="first-name"
                     autoComplete="given-name"
-                    className="block w-full border-1 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6 rounded-md" 
+                    className="block w-full border-1 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6 rounded-md"
                   />
                 </div>
               </div>
@@ -216,12 +206,12 @@ const Contact = async () => {
               <div>
                 <label className="block text-sm leading-6">Last name</label>
                 <div className="mt-2.5">
-                  <input 
-                    type="text" 
-                    name="last-name" 
-                    id="last-name" 
+                  <input
+                    type="text"
+                    name="last-name"
+                    id="last-name"
                     autoComplete="family-name"
-                    className="block w-full border-1 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6 rounded-md" 
+                    className="block w-full border-1 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6 rounded-md"
                   />
                 </div>
               </div>
@@ -229,12 +219,12 @@ const Contact = async () => {
               <div className="sm:col-span-2">
                 <label className="block text-sm leading-6">Email</label>
                 <div className="mt-2.5">
-                  <input 
-                    type="email" 
-                    name="email" 
-                    id="email" 
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
                     autoComplete="email"
-                    className="block w-full border-1 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6 rounded-md" 
+                    className="block w-full border-1 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6 rounded-md"
                   />
                 </div>
               </div>
@@ -242,8 +232,8 @@ const Contact = async () => {
               <div className="sm:col-span-2">
                 <label className="block text-sm leading-6">Message</label>
                 <div className="mt-2.5">
-                  <textarea 
-                    name="message" 
+                  <textarea
+                    name="message"
                     id="message"
                     rows={3}
                     className="block w-full border-1 px-3.5 py-2 text-gray-400 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6 rounded-md"></textarea>
@@ -253,15 +243,15 @@ const Contact = async () => {
             </div>
 
             <div className="mt-10">
-              <button 
+              <button
                 type="submit"
                 className="block w-full px-3.5 py-2.5 text-center text-md font-semibold shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 rounded-md border bg-black text-white tracking-wide"
               >
                 Send Message
               </button>
             </div>
-          </form>
 
+          </form>
 
         </div>
 
