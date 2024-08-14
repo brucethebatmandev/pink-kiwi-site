@@ -119,14 +119,14 @@ const Contact = async () => {
   ]
 
   return (
-    <div id="contact" className="grid lg:grid-cols-2 gap-20 lg:gap-0 lg:mb-20 py-10 _outline outline-2 outline-orange-500">
+    <div id="contact" className="grid lg:grid-cols-2 gap-20 lg:gap-0 lg:mb-20 py-10">
 
       {/*( Phone, Email, Address) & Opening Hours */}
-      <div className="grid gap-10 lg:gap-6 justify-center h-full rounded-md tracking-wide _outline outline-2 outline-red-500">
+      <div className="grid gap-10 lg:gap-6 justify-center h-full rounded-md tracking-wide">
 
-        <h2 className="text-3xl _outline outline-2 outline-red-500">How to reach out</h2>
+        <h2 className="text-3xl">How to reach out</h2>
 
-        <div className="grid gap-3 _outline outline-2 outline-red-500">
+        <div className="grid gap-3">
 
           {/* Phone */}
           <div className="flex gap-4">
@@ -158,7 +158,7 @@ const Contact = async () => {
 
 
         {/* <!-- Opening Hours --> */}
-        <div className="w-56 flex flex-col justify-end _outline outline-2 outline-red-500">
+        <div className="w-56 flex flex-col justify-end">
           <div>
             <h2 className="mb-2 text-lg">Opening Hours</h2>
 
@@ -181,13 +181,13 @@ const Contact = async () => {
       </div>
 
       {/* <!-- Contact Form --> */}
-      <div className="mb-20 lg:mb-0 _outline outline-2 outline-green-500">
+      <div className="mb-20 lg:mb-0">
 
-        <div className="grid gap-8 lg:gap-12 w-full max-w-md md:max-w-lg px-10 md:px-0 lg:px-8 mx-auto _outline outline-2 outline-purple-500">
+        <div className="grid gap-8 lg:gap-12 w-full max-w-md md:max-w-lg px-10 md:px-0 lg:px-8 mx-auto">
 
-          <h2 className="text-3xl _outline outline-2 outline-green-500 text-center lg:text-left">Send us a Message</h2>
+          <h2 className="text-3xl text-center lg:text-left">Send us a Message</h2>
 
-          <form action="#" method="POST" className="_outline outline-2 outline-green-500">
+          <form action="#" method="POST">
             <div className="grid gap-x-8 gap-y-6 sm:grid-cols-2 text-gray-900 ">
 
               <div>
@@ -245,7 +245,7 @@ const Contact = async () => {
             <div className="mt-10">
               <button
                 type="submit"
-                className="block w-full px-3.5 py-2.5 text-center text-md font-semibold shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 rounded-md border bg-black text-white tracking-wide "
+                className="block w-full px-3.5 py-2.5 text-center text-md font-semibold shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 rounded-md border bg-black text-white tracking-wide"
               >
                 Send Message
               </button>
