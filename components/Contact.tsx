@@ -43,17 +43,17 @@ const Contact = async () => {
   const data: Contact[] = [
     {
       id: 3,
-      value: '14-16 High St, Soham, CB7 5HD',
+      value: '138 Crwys Rd, Cardiff CF24 4NR',
       type: 'address',
     },
     {
       id: 2,
-      value: 'info@naz-soham.co.uk',
+      value: 'pinkkiwi138@gmail.com',
       type: 'email',
     },
     {
       id: 1,
-      value: '(+) 01353 723724',
+      value: '07724680384',
       type: 'phone',
     }
   ]
