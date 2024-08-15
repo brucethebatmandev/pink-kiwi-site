@@ -31,11 +31,11 @@ const Hero = () => {
                 </div>
             </div>
 
-            <div className="col-span-1 h-full bg-yellow-100">
+            <div className="col-span-1 h-full">
                 <img 
                     // src="/img/disposable-cup.jpg" 
                     src="https://images.pexels.com/photos/373639/pexels-photo-373639.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
-                    className="h-full _min-h-[25rem] object-contain" />
+                    className="h-full _min-h-[25rem] object-cover" />
             </div>
 
         </div>
