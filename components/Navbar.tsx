@@ -1,5 +1,5 @@
 'use client'
-import Link from 'next/link';
+
 import { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { Link as ScrollLink } from 'react-scroll';
@@ -10,24 +10,17 @@ const Navbar = () => {
     const handleClick = () => setNav(!nav);
 
     return (
-        <div className='absolute z-10 w-full py-4 px-4 bg-pink-500/65 text-gray-300'>
+        <div className='absolute z-10 w-full pt-6 transparent text-white text-md font-semibold xl:text-lg sm:max-w-md'>
 
-            <div className='flex justify-between items-center'>
-                {/* Logo */}
-                <Link href="/">
-                    <img
-                        className="rounded-full max-w-16"
-                        src="/img/pink-kiwi-logo.jpg"
-                    />
-                </Link>
+            <div className='flex justify-end sm:justify-center lg:justify-start items-center pr-6 sm:pr-0'>
 
                 {/* Hamburger */}
-                <div onClick={handleClick} className='md:hidden z-10'>
-                    {!nav ? <FaBars className='hover:cursor-pointer' size={22} /> : <FaTimes className='hover:cursor-pointer' size={22} />}
+                <div onClick={handleClick} className='sm:hidden z-10'>
+                    {!nav ? <FaBars className='hover:cursor-pointer' size={30} /> : <FaTimes className='hover:cursor-pointer' size={30} />}
                 </div>
 
                 {/* menu */}
-                <ul className='hidden md:flex gap-8 '>
+                <ul className='hidden sm:flex gap-8'>
                     <li>
                         <ScrollLink className='hover:cursor-pointer' to='menu' smooth={true} duration={500}>
                             Menu
@@ -61,34 +54,30 @@ const Navbar = () => {
                 className={
                     !nav
                         ? 'hidden'
-                        : 'absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center'
+                        : 'absolute top-0 left-0 w-full h-screen bg-cyan-700 flex flex-col justify-center items-center text-4xl space-y-12'
                 }
             >
-                <li className='py-6 text-4xl'>
+                <li className='hover:cursor-pointer'>
                     <ScrollLink onClick={handleClick} to='menu' smooth={true} duration={500}>
                         Menu
                     </ScrollLink>
                 </li>
-                <li className='py-6 text-4xl'>
-                    {' '}
+                <li className='hover:cursor-pointer'>
                     <ScrollLink onClick={handleClick} to='about' smooth={true} duration={500}>
                         About
                     </ScrollLink>
                 </li>
-                <li className='py-6 text-4xl'>
-                    {' '}
+                <li className='hover:cursor-pointer'>
                     <ScrollLink onClick={handleClick} to='gallery' smooth={true} duration={500}>
                         Gallery
                     </ScrollLink>
                 </li>
-                <li className='py-6 text-4xl'>
-                    {' '}
+                <li className='hover:cursor-pointer'>
                     <ScrollLink onClick={handleClick} to='contact' smooth={true} duration={500}>
                         Contact
                     </ScrollLink>
                 </li>
-                <li className='py-6 text-4xl'>
-                    {' '}
+                <li className='hover:cursor-pointer'>
                     <ScrollLink onClick={handleClick} to='order' smooth={true} duration={500}>
                         Order
                     </ScrollLink>

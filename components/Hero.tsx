@@ -1,14 +1,20 @@
 "use client"
-import { Link } from "react-scroll"
+
+// import Image from "next/image"
+// import { Link } from "react-scroll"
+import Navbar from "./Navbar"
 
 const Hero = () => {
     return (
-        <div className="grid lg:grid-cols-2">
+        <div className="_relative grid lg:grid-cols-2">
 
-            <div className="col-span-1 bg-cyan-600 text-white">
-                <div className="flex flex-col gap-4 lg:gap-0 place-items-center h-full outline-2 outline-pink-400 py-6">
+            <div className="_relative col-span-1 bg-cyan-600 text-white space-y-10 pb-24">
 
-                    <ul className="flex gap-6 2xl:gap-10 text-md font-semibold xl:text-lg max-w-md w-full flex-[0_0_5%] justify-center lg:justify-start">
+                {/* <Navbar /> */}
+
+                <div className="relative flex flex-col gap-4 lg:gap-0 place-items-center h-full mx-auto px-8 sm:px-0 space-y-16 lg:space-y-10">
+
+                    {/* <ul className="hidden md:flex gap-6 2xl:gap-10 text-md font-semibold xl:text-lg max-w-md w-full flex-[0_0_5%] justify-center lg:justify-start">
                         <li className="hover:cursor-pointer">
                             <Link to="menu" smooth={true} duration={500}>Menu</Link>
                         </li>
@@ -24,7 +30,13 @@ const Hero = () => {
                         <li className="hover:cursor-pointer">Order</li>
                     </ul>
 
-                    <div className="flex flex-col items-center lg:items-start justify-center  flex-[0_0_95%] gap-10 max-w-md w-full mb-10">
+                    <div className="md:hidden text-md font-semibold">Nav Link</div> */}
+
+                    <Navbar />
+
+
+
+                    <div className="max-w-md flex flex-col items-center lg:items-start justify-center  flex-[0_0_95%] gap-10 w-full mb-10">
                         <div className="text-5xl xl:text-6xl font-semibold w-full text-center lg:text-left">
                             <h1>Pink Kiwi</h1>
                         </div>
@@ -41,8 +53,8 @@ const Hero = () => {
                 </div>
             </div>
 
-            <div className="col-span-1 _max-w-screen-lg h-full bg-yellow-100">
-                <img src="https://www.riseandgrind.co/wordpress/wp-content/uploads/2021/03/disposable-cup-rise-and-grind-4.jpg" className="h-full min-h-[25rem] object-cover" />
+            <div className="col-span-1 h-full bg-yellow-100">
+                <img src="/img/disposable-cup.jpg" className="h-full min-h-[25rem] object-cover" />
             </div>
 
         </div>
