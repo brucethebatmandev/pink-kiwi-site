@@ -6,7 +6,7 @@ const Menu = () => {
   return (
     <div id='menu' className=' my-24 grid lg:grid-cols-2 gap-24 lg:gap-0'>
 
-      <div className='col-span-1 mx-auto lg:order-last px-12 max-w-md sm:max-w-2xl'>
+      <div className='col-span-1 mx-auto lg:order-last px-12 sm:px-0 max-w-md sm:max-w-2xl'>
 
         <div className='grid gap-10 max-w-md'>
 

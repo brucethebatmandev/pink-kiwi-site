@@ -6,7 +6,7 @@ const About = () => {
   return (
     <div id='about' className='my-24 grid lg:grid-cols-2 gap-24 lg:gap-0'>
 
-      <div className='col-span-1 m-auto'>
+      <div className='col-span-1 m-auto px-12 sm:px-0 max-w-md sm:max-w-2xl'>
 
         <div className='grid gap-10 max-w-md'>
 
@@ -34,11 +34,11 @@ const About = () => {
 
       </div>
 
-      <div className='col-span-1 _mx-auto _my-auto m-auto _h-full'>
+      <div className='col-span-1 m-auto'>
         <img
           src="https://img.taste.com.au/swuErs2G/taste/2021/02/lemon-dream-dessert-169681-2.jpg"
           alt=""
-          className='rounded-xl shadow-md aspect-square max-w-[25rem] max-h-[25rem]'
+          className='rounded-xl shadow-md aspect-square max-w-[18rem] max-h-[18rem] sm:max-w-[30rem] sm:max-h-[30rem] object-cover'
         />
       </div>
 
