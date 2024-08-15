@@ -119,7 +119,7 @@ const Contact = async () => {
   ]
 
   return (
-    <div id="contact" className="grid lg:grid-cols-2 gap-20 lg:gap-0 lg:mb-20 py-10">
+    <div id="contact" className="grid lg:grid-cols-2 gap-20 lg:gap-0 lg:mb-20 py-10 max-w-md sm:max-w-full px-4 sm:px-0">
 
       {/*( Phone, Email, Address) & Opening Hours */}
       <div className="grid gap-10 lg:gap-6 justify-center h-full rounded-md tracking-wide">
