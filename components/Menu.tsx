@@ -4,9 +4,9 @@ import { CakeSlice, IceCreamBowl, IceCreamCone } from 'lucide-react'
 
 const Menu = () => {
   return (
-    <div id='menu' className='my-24 grid lg:grid-cols-2 gap-24 lg:gap-0'>
+    <div id='menu' className=' my-24 grid lg:grid-cols-2 gap-24 lg:gap-0'>
 
-      <div className='col-span-1 m-auto lg:order-last'>
+      <div className='col-span-1 mx-auto lg:order-last px-12 max-w-md sm:max-w-2xl'>
 
         <div className='grid gap-10 max-w-md'>
 
@@ -39,7 +39,7 @@ const Menu = () => {
           // src="https://cdn.loveandlemons.com/wp-content/uploads/2021/06/summer-desserts.jpg"
           src='/img/breakfast-spread-1.jpg'
           alt=""
-          className='rounded-xl shadow-md aspect-square max-w-[25rem] max-h-[25rem] object-cover'
+          className='rounded-xl shadow-md aspect-square max-w-[18rem] max-h-[18rem] sm:max-w-[30rem] sm:max-h-[30rem] object-cover'
         />
       </div>
 

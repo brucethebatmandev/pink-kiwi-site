@@ -15,7 +15,7 @@ import { Star } from "lucide-react"
 
 const Reviews = () => {
   return (
-    <div className="grid gap-6 mx-20 mb-20 ">
+    <div className="grid gap-6 mx-20 mb-20 max-w-md sm:max-w-2xl">
 
       <h1 className="text-2xl">What our Customers say</h1>
 
