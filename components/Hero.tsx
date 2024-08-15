@@ -1,7 +1,5 @@
 "use client"
 
-// import Image from "next/image"
-// import { Link } from "react-scroll"
 import Navbar from "./Navbar"
 
 const Hero = () => {
@@ -14,27 +12,7 @@ const Hero = () => {
 
                 <div className="relative flex flex-col gap-4 lg:gap-0 place-items-center h-full mx-auto px-8 sm:px-0 space-y-16 lg:space-y-10">
 
-                    {/* <ul className="hidden md:flex gap-6 2xl:gap-10 text-md font-semibold xl:text-lg max-w-md w-full flex-[0_0_5%] justify-center lg:justify-start">
-                        <li className="hover:cursor-pointer">
-                            <Link to="menu" smooth={true} duration={500}>Menu</Link>
-                        </li>
-                        <li className="hover:cursor-pointer">
-                            <Link to="about" smooth={true} duration={500}>About</Link>
-                        </li>
-                        <li className="hover:cursor-pointer">
-                            <Link to="gallery" smooth={true} duration={500}>Gallery</Link>
-                        </li>
-                        <li className="hover:cursor-pointer">
-                            <Link to="contact" smooth={true} duration={500}>Contact</Link>
-                        </li>
-                        <li className="hover:cursor-pointer">Order</li>
-                    </ul>
-
-                    <div className="md:hidden text-md font-semibold">Nav Link</div> */}
-
                     <Navbar />
-
-
 
                     <div className="max-w-md flex flex-col items-center lg:items-start justify-center  flex-[0_0_95%] gap-10 w-full mb-10">
                         <div className="text-5xl xl:text-6xl font-semibold w-full text-center lg:text-left">
@@ -54,7 +32,10 @@ const Hero = () => {
             </div>
 
             <div className="col-span-1 h-full bg-yellow-100">
-                <img src="/img/disposable-cup.jpg" className="h-full min-h-[25rem] object-cover" />
+                <img 
+                    // src="/img/disposable-cup.jpg" 
+                    src="https://images.pexels.com/photos/373639/pexels-photo-373639.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+                    className="h-full min-h-[25rem] object-cover" />
             </div>
 
         </div>

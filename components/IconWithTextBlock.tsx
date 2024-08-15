@@ -8,7 +8,7 @@ type IconWithTextBlockProps = {
 
 const IconWithTextBlock: React.FC<IconWithTextBlockProps> = ({ icon: Icon, heading, text }) => {
   return (
-    <div className='flex gap-4'>
+    <div className='flex gap-8 sm:gap-4'>
 
     <div className='flex justify-center items-center'>
       <div className='p-3 bg-pink-400/50 rounded-full shadow-md'>
