@@ -35,7 +35,7 @@ const Hero = () => {
                 <img 
                     // src="/img/disposable-cup.jpg" 
                     src="https://images.pexels.com/photos/373639/pexels-photo-373639.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
-                    className="h-full _min-h-[25rem] object-cover" />
+                    className="h-full _min-h-[25rem] object-cover bg-right-bottom sm:bg-center" />
             </div>
 
         </div>
